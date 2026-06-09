@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rohi Kids™ — School, Cool, and All That Rules!</title>
+  <meta name="description" content="Rohi Kids™ — an authentically Plush brand. K-5 educational books, videos and games where young learners go on big adventures around the world." />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__promo">
+        <span class="topbar__spark">✨</span> 100,000 Kids and Growing — Join the Journey!
+      </p>
+      <nav class="topbar__links" aria-label="Utility navigation">
+        <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener">YouTube</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#faqs">FAQs</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Rohi Kids home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40">
+            <rect x="4" y="6" width="40" height="36" rx="10" fill="url(#logoGrad)"/>
+            <path d="M14 30c4-6 16-6 20 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="18" cy="20" r="3" fill="#fff"/>
+            <circle cx="30" cy="20" r="3" fill="#fff"/>
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="48" y2="48">
+                <stop stop-color="#00D9FF"/><stop offset="1" stop-color="#007BFF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo__text">Rohi<span class="logo__text--alt">Kids</span></span>
+      </a>
+
+      <!-- Categories -->
+      <button class="btn-categories">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="currentColor"/></svg>
+        Categories
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <!-- Search -->
+      <form class="search" role="search" onsubmit="return false;">
+        <input type="search" class="search__input" placeholder="Search for books, games & more…" aria-label="Search" />
+        <button class="search__btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <a href="#game" class="btn-play">
+          <span class="btn-play__dot"></span> Play ABC Game
+        </a>
+        <button class="icon-btn" aria-label="Account">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5 6 5c2 0 3.2 1.2 4 2.5C10.8 6.2 12 5 14 5c3.5 0 5 4 3.5 7-2.5 4.5-9.5 9-9.5 9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <span class="badge">0</span>
+        </button>
+        <button class="icon-btn icon-btn--cart" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="20" r="1.6" fill="currentColor"/><circle cx="18" cy="20" r="1.6" fill="currentColor"/><path d="M3 4h2l2.5 12h11l2-8H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="badge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="#">Home</a>
+      <a href="#videos">Our Videos</a>
+      <a href="#books">Shop</a>
+      <a href="#game">Play ABC Game</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <!-- floating animated icons -->
+    <div class="hero__icons" aria-hidden="true">
+      <svg class="float float--1" viewBox="0 0 64 64" width="64" height="64"><rect x="8" y="14" width="48" height="36" rx="6" fill="#FF6B35"/><rect x="14" y="20" width="36" height="24" rx="3" fill="#fff"/><path d="M20 28h24M20 34h18" stroke="#FF6B35" stroke-width="2" stroke-linecap="round"/></svg>
+      <svg class="float float--2" viewBox="0 0 64 64" width="50" height="50"><path d="M32 6l6 16 18 1-14 11 5 18-15-10-15 10 5-18L14 23l18-1z" fill="#FFD700"/></svg>
+      <svg class="float float--3" viewBox="0 0 64 64" width="56" height="56"><rect x="26" y="8" width="12" height="34" rx="6" fill="#1DD1A1"/><path d="M26 38h12l-6 14z" fill="#FF6B9D"/><circle cx="32" cy="16" r="3" fill="#fff"/></svg>
+      <svg class="float float--4" viewBox="0 0 64 64" width="48" height="48"><circle cx="32" cy="32" r="22" fill="#00D9FF"/><path d="M32 10v44M10 32h44" stroke="#fff" stroke-width="2"/><ellipse cx="32" cy="32" rx="10" ry="22" stroke="#fff" stroke-width="2" fill="none"/></svg>
+      <svg class="float float--5" viewBox="0 0 64 64" width="44" height="44"><path d="M32 8c8 6 12 14 12 22a12 12 0 11-24 0c0-8 4-16 12-22z" fill="#FF4757"/><circle cx="32" cy="30" r="5" fill="#FFD700"/></svg>
+      <svg class="float float--6" viewBox="0 0 64 64" width="40" height="40"><path d="M32 6l5 14 15 1-12 9 4 15-12-8-12 8 4-15-12-9 15-1z" fill="#A55EEA"/></svg>
+    </div>
+
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__eyebrow">An authentically Plush™ brand</span>
+        <h1 class="hero__title">
+          School, Cool, <br />and All That <span class="hero__title-pop">Rules!</span>
+        </h1>
+        <p class="hero__subtitle">
+          Join <strong>Rohi, Dylan, Aya &amp; Dr. Plush</strong> as they fly around the world
+          on the Book of Journeys™ — where K-5 learning comes to life with fun, values and adventure.
+        </p>
+        <div class="hero__cta">
+          <a href="#books" class="btn btn--primary">Explore the Books</a>
+          <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener" class="btn btn--ghost">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            Watch on YouTube
+          </a>
+        </div>
+        <div class="hero__stats">
+          <div><strong>100K+</strong><span>Happy Kids</span></div>
+          <div><strong>15+</strong><span>Adventure Books</span></div>
+          <div><strong>K-5</strong><span>Learn &amp; Grow</span></div>
+        </div>
+      </div>
+
+      <!-- Hero illustration -->
+      <div class="hero__art">
+        <div class="hero__blob"></div>
+        <svg class="hero__book" viewBox="0 0 320 320" width="380" height="380">
+          <!-- open book -->
+          <path d="M40 220c40-30 80-30 120 0 40-30 80-30 120 0v40c-40-30-80-30-120 0-40-30-80-30-120 0z" fill="#FF8C42"/>
+          <path d="M40 220c40-30 80-30 120 0v40c-40-30-80-30-120 0z" fill="#FF6B35"/>
+          <path d="M160 220c40-30 80-30 120 0v40c-40-30-80-30-120 0z" fill="#FF7A3D"/>
+          <!-- pages -->
+          <rect x="70" y="120" width="80" height="100" rx="6" fill="#fff" transform="rotate(-4 110 170)"/>
+          <rect x="170" y="120" width="80" height="100" rx="6" fill="#fff" transform="rotate(4 210 170)"/>
+          <!-- character bot -->
+          <g class="hero__bot">
+            <rect x="135" y="90" width="50" height="46" rx="12" fill="#00D9FF"/>
+            <circle cx="150" cy="110" r="6" fill="#fff"/><circle cx="170" cy="110" r="6" fill="#fff"/>
+            <circle cx="150" cy="110" r="3" fill="#1a1a2e"/><circle cx="170" cy="110" r="3" fill="#1a1a2e"/>
+            <rect x="152" y="122" width="16" height="4" rx="2" fill="#fff"/>
+            <line x1="160" y1="78" x2="160" y2="90" stroke="#007BFF" stroke-width="3"/>
+            <circle cx="160" cy="74" r="5" fill="#FFD700"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+
+    <!-- wave divider -->
+    <svg class="hero__wave" viewBox="0 0 1440 120" preserveAspectRatio="none"><path d="M0 60c240 60 480 60 720 30s480-60 720 0v30H0z" fill="#fff"/></svg>
+  </section>
+
+  <!-- ============ RETAILER BADGES ============ -->
+  <section class="retailers">
+    <div class="container retailers__inner">
+      <span class="retailers__label">Available at</span>
+      <a class="retailer-pill" href="#" target="_blank" rel="noopener">Walmart</a>
+      <a class="retailer-pill" href="#" target="_blank" rel="noopener">amazon</a>
+      <a class="retailer-pill" href="#" target="_blank" rel="noopener">Barnes &amp; Noble</a>
+    </div>
+  </section>
+
+  <!-- ============ BOOKS ============ -->
+  <section class="section" id="books">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">📚 Our Books</span>
+        <h2 class="section__title">Collect the Series!</h2>
+        <p class="section__lead">Science-of-Reading aligned activity books that make every page an adventure.</p>
+      </div>
+
+      <div class="book-grid">
+        <!-- Book card -->
+        <article class="book-card reveal">
+          <div class="book-card__media">
+            <div class="book-cover book-cover--a">Cursive<br>Activities</div>
+            <span class="book-card__tag">K-1</span>
+          </div>
+          <h3 class="book-card__title">Cursive Activities for Children</h3>
+          <p class="book-card__price">$15.99</p>
+          <button class="btn btn--small">Add to Cart</button>
+        </article>
+
+        <article class="book-card reveal" style="--d:.1s">
+          <div class="book-card__media">
+            <div class="book-cover book-cover--b">Alphabet<br>Activities</div>
+            <span class="book-card__tag">K-1</span>
+          </div>
+          <h3 class="book-card__title">Alphabet Activities for Children</h3>
+          <p class="book-card__price">$15.99</p>
+          <button class="btn btn--small">Add to Cart</button>
+        </article>
+
+        <article class="book-card reveal" style="--d:.2s">
+          <div class="book-card__media">
+            <div class="book-cover book-cover--c">100 Sight<br>Words</div>
+            <span class="book-card__tag">K-1</span>
+          </div>
+          <h3 class="book-card__title">100 Sight Words for Kids</h3>
+          <p class="book-card__price">$15.99</p>
+          <button class="btn btn--small">Add to Cart</button>
+        </article>
+
+        <article class="book-card reveal" style="--d:.3s">
+          <div class="book-card__media">
+            <div class="book-cover book-cover--d">CVC Word<br>Activities</div>
+            <span class="book-card__tag">K-1</span>
+          </div>
+          <h3 class="book-card__title">CVC Words for Children</h3>
+          <p class="book-card__price">$15.99</p>
+          <button class="btn btn--small">Add to Cart</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ AMAZING JOURNEY ============ -->
+  <section class="journey">
+    <div class="container journey__inner">
+      <div class="journey__text reveal">
+        <span class="section__eyebrow section__eyebrow--light">🌍 Rohi Goes Worldwide</span>
+        <h2 class="section__title section__title--light">Amazing Journeys<br>Around the World</h2>
+        <p class="journey__lead">From Philadelphia to Greece, India, Japan and Egypt — explore cultures, values and traditions on the Book of Journeys™.</p>
+        <a href="#" class="btn btn--primary">Shop the Journeys</a>
+      </div>
+      <div class="journey__cards">
+        <div class="journey-card jc--1 reveal">Philadelphia</div>
+        <div class="journey-card jc--2 reveal" style="--d:.1s">Greece</div>
+        <div class="journey-card jc--3 reveal" style="--d:.2s">India</div>
+        <div class="journey-card jc--4 reveal" style="--d:.3s">Japan</div>
+        <div class="journey-card jc--5 reveal" style="--d:.4s">Egypt</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEOS ============ -->
+  <section class="section section--alt" id="videos">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">▶️ Our Videos</span>
+        <h2 class="section__title">Learning Comes to Life</h2>
+        <p class="section__lead">Catch sing-alongs, STEAM experiments and world adventures on the Rohi Kids™ channel.</p>
+      </div>
+      <div class="video-grid">
+        <div class="video-card reveal">
+          <div class="video-card__thumb"><span class="video-card__play">▶</span></div>
+          <h3>The Somertons — Chasin' the Horizon</h3>
+        </div>
+        <div class="video-card reveal" style="--d:.1s">
+          <div class="video-card__thumb video-card__thumb--2"><span class="video-card__play">▶</span></div>
+          <h3>ABC Adventure Sing-Along</h3>
+        </div>
+        <div class="video-card reveal" style="--d:.2s">
+          <div class="video-card__thumb video-card__thumb--3"><span class="video-card__play">▶</span></div>
+          <h3>Dr. Plush's STEAM Lab</h3>
+        </div>
+      </div>
+      <div class="video-cta reveal">
+        <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener" class="btn btn--youtube">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          Follow us on YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GAMES ============ -->
+  <section class="section games" id="game">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">🎮 Our Games</span>
+        <h2 class="section__title">Play Amazing Rohi Games!</h2>
+      </div>
+      <div class="game-grid">
+        <article class="game-card game-card--journey reveal">
+          <div class="game-card__icons" aria-hidden="true">
+            <span class="g-float">🚀</span><span class="g-float">⭐</span><span class="g-float">🍄</span>
+          </div>
+          <h3>Rohi's Journey</h3>
+          <p>In the end it's all a question of heart. Help Rohi adventure through the world!</p>
+          <a href="#" class="btn btn--primary">Play Now</a>
+        </article>
+        <article class="game-card game-card--wall reveal" style="--d:.15s">
+          <div class="game-card__icons" aria-hidden="true">
+            <span class="g-float">🧠</span><span class="g-float">🔤</span><span class="g-float">✨</span>
+          </div>
+          <h3>Dr. Plush's Neuro-Word Wonderwall</h3>
+          <p>A silly STEAM-based word adventure. What new idea will Dr. Plush come up with next?</p>
+          <a href="#" class="btn btn--ghost btn--ghost-dark">Explore Now</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ NEWSLETTER ============ -->
+  <section class="newsletter" id="contact">
+    <div class="container newsletter__inner reveal">
+      <h2>Join the Journey ✈️</h2>
+      <p>Get new books, videos and games delivered to your inbox.</p>
+      <form class="newsletter__form" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email" aria-label="Email" required />
+        <button class="btn btn--primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="about">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="#" class="logo logo--light">
+          <span class="logo__text">Rohi<span class="logo__text--alt">Kids</span></span>
+        </a>
+        <p class="footer__about">An authentically Plush™ brand. Powered by Rohi AI™ and PLUSHTECH™ HQ — entertaining, educational content for young learners everywhere.</p>
+        <div class="footer__social">
+          <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="#">Home</a>
+        <a href="#books">Shop</a>
+        <a href="#videos">Our Videos</a>
+        <a href="#game">Games</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+        <a href="#faqs">FAQs</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer__col">
+        <h4>Call Support</h4>
+        <p class="footer__phone">+1 344 680 931</p>
+        <p class="footer__about">Plush Education, LLC</p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <p>© 2026 Rohi Kids™. All Rights Reserved.</p>
+        <p><a href="#">Terms &amp; Conditions</a> · <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
