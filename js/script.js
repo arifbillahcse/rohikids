@@ -45,4 +45,18 @@ document.addEventListener('DOMContentLoaded', () => {
     reveals.forEach(el => el.classList.add('visible'));
   }
 
+  /* ---- Ring chart animate on enter ---- */
+  const ring = document.querySelector('.ring-progress');
+  if (ring && 'IntersectionObserver' in window) {
+    const ringObs = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          ring.classList.add('animated');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.4 });
+    ringObs.observe(ring);
+  }
+
 });
