@@ -164,8 +164,8 @@ img { max-width: 100%; display: block; }
 
 /* ============ RETAILERS ============ */
 .retailers {
-  background: linear-gradient(135deg, rgba(0,123,255,.05), rgba(29,209,161,.05));
-  padding: 44px 0;
+  background: linear-gradient(180deg, rgba(0,123,255,.03), rgba(255,107,53,.03));
+  padding: 90px 0;
   border-bottom: 1px solid #eef1f7;
   position: relative;
   overflow: hidden;
@@ -173,51 +173,144 @@ img { max-width: 100%; display: block; }
 .retailers::before {
   content: '🛍️';
   position: absolute;
-  top: -20px;
-  right: 40px;
-  font-size: 120px;
-  opacity: .08;
+  top: -40px;
+  right: -40px;
+  font-size: 280px;
+  opacity: .05;
   z-index: 0;
 }
-.retailers__inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 24px;
-  flex-wrap: wrap;
+
+.retailers__head {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 60px;
   position: relative;
   z-index: 1;
 }
-.retailers__label {
-  font-weight: 700;
+
+.retailers__title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
   color: var(--ink);
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  margin-bottom: 16px;
 }
-.retailer-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+
+.retailers__subtitle {
+  color: var(--gray);
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 620px;
+  margin-inline: auto;
+}
+
+.retailer-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  position: relative;
+  z-index: 1;
+}
+
+.retailer-card {
   background: #fff;
-  padding: 14px 28px;
-  border-radius: 50px;
-  font-weight: 700;
-  font-family: 'Poppins', sans-serif;
-  color: var(--ink);
+  border-radius: var(--radius-lg);
+  padding: 36px 28px;
   box-shadow: var(--shadow);
-  transition: transform .25s, box-shadow .25s, background .25s, color .25s;
+  transition: transform .3s, box-shadow .3s, border-color .3s;
   border: 2px solid transparent;
-  white-space: nowrap;
+  display: flex;
+  flex-direction: column;
 }
-.retailer-pill svg { display: block; }
-.retailer-pill--walmart { color: #0071ce; }
-.retailer-pill--walmart:hover { background: linear-gradient(135deg, #0071ce, #005aa5); color: #fff; transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,113,206,.35); }
-.retailer-pill--amazon { color: #FF9900; }
-.retailer-pill--amazon:hover { background: linear-gradient(135deg, #FF9900, #e68a00); color: #fff; transform: translateY(-6px); box-shadow: 0 12px 30px rgba(255,153,0,.35); }
-.retailer-pill--bn { color: #000; }
-.retailer-pill--bn:hover { background: linear-gradient(135deg, #000, #333); color: #fff; transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,.35); }
+
+.retailer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+.retailer-card--walmart:hover { border-color: #0071CE; }
+.retailer-card--amazon:hover { border-color: #FF9900; }
+.retailer-card--bn:hover { border-color: #000; }
+
+.retailer-card__icon {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 20px;
+  display: grid;
+  place-items: center;
+}
+
+.retailer-card__icon svg { display: block; width: 100%; height: 100%; }
+
+.retailer-card--walmart .retailer-card__icon svg { color: #0071CE; }
+.retailer-card--amazon .retailer-card__icon svg { color: #FF9900; }
+.retailer-card--bn .retailer-card__icon svg { color: #000; }
+
+.retailer-card__name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.retailer-card__desc {
+  color: var(--gray);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.retailer-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 24px;
+  padding: 16px;
+  background: #fafbfd;
+  border-radius: 12px;
+}
+
+.retailer-card__price {
+  font-size: 14px;
+  color: var(--gray);
+  font-weight: 500;
+}
+
+.retailer-card__price strong {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.retailer-card__badge {
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.btn--retailer {
+  background: var(--blue);
+  color: #fff;
+  box-shadow: 0 6px 16px rgba(0,123,255,.25);
+  font-weight: 600;
+  padding: 13px 26px;
+  align-self: flex-start;
+}
+
+.btn--retailer:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0,123,255,.35);
+}
+
+.btn--retailer-walmart { background: #0071CE; box-shadow: 0 6px 16px rgba(0,113,206,.25); }
+.btn--retailer-walmart:hover { background: #005aa5; box-shadow: 0 10px 24px rgba(0,113,206,.35); }
+
+.btn--retailer-amazon { background: #FF9900; box-shadow: 0 6px 16px rgba(255,153,0,.25); }
+.btn--retailer-amazon:hover { background: #e68a00; box-shadow: 0 10px 24px rgba(255,153,0,.35); }
+
+.btn--retailer-bn { background: #000; box-shadow: 0 6px 16px rgba(0,0,0,.25); }
+.btn--retailer-bn:hover { background: #333; box-shadow: 0 10px 24px rgba(0,0,0,.35); }
 
 /* ============ SECTIONS ============ */
 .section { padding: 90px 0; }
@@ -339,6 +432,7 @@ img { max-width: 100%; display: block; }
   .video-grid { grid-template-columns: 1fr; }
   .game-grid { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr 1fr; }
+  .retailer-cards { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 768px) {
   .topbar__links { display: none; }
@@ -353,6 +447,7 @@ img { max-width: 100%; display: block; }
   .book-grid { grid-template-columns: 1fr; }
   .footer__grid { grid-template-columns: 1fr; }
   .hero__stats { gap: 24px; }
+  .retailer-cards { grid-template-columns: 1fr; }
 }
 
 /* Respect reduced motion */
