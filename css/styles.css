@@ -163,11 +163,61 @@ img { max-width: 100%; display: block; }
 .hero__wave { position: absolute; bottom: -1px; left: 0; width: 100%; height: 120px; }
 
 /* ============ RETAILERS ============ */
-.retailers { background: #fff; padding: 26px 0; border-bottom: 1px solid #eef1f7; }
-.retailers__inner { display: flex; align-items: center; justify-content: center; gap: 18px; flex-wrap: wrap; }
-.retailers__label { font-weight: 600; color: var(--gray); font-family: 'Poppins', sans-serif; }
-.retailer-pill { background: var(--light); padding: 12px 30px; border-radius: 50px; font-weight: 700; font-family: 'Poppins', sans-serif; color: var(--ink); box-shadow: var(--shadow); transition: transform .25s, box-shadow .25s; }
-.retailer-pill:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); color: var(--blue); }
+.retailers {
+  background: linear-gradient(135deg, rgba(0,123,255,.05), rgba(29,209,161,.05));
+  padding: 44px 0;
+  border-bottom: 1px solid #eef1f7;
+  position: relative;
+  overflow: hidden;
+}
+.retailers::before {
+  content: '🛍️';
+  position: absolute;
+  top: -20px;
+  right: 40px;
+  font-size: 120px;
+  opacity: .08;
+  z-index: 0;
+}
+.retailers__inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 1;
+}
+.retailers__label {
+  font-weight: 700;
+  color: var(--ink);
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.retailer-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #fff;
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-family: 'Poppins', sans-serif;
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  transition: transform .25s, box-shadow .25s, background .25s, color .25s;
+  border: 2px solid transparent;
+  white-space: nowrap;
+}
+.retailer-pill svg { display: block; }
+.retailer-pill--walmart { color: #0071ce; }
+.retailer-pill--walmart:hover { background: linear-gradient(135deg, #0071ce, #005aa5); color: #fff; transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,113,206,.35); }
+.retailer-pill--amazon { color: #FF9900; }
+.retailer-pill--amazon:hover { background: linear-gradient(135deg, #FF9900, #e68a00); color: #fff; transform: translateY(-6px); box-shadow: 0 12px 30px rgba(255,153,0,.35); }
+.retailer-pill--bn { color: #000; }
+.retailer-pill--bn:hover { background: linear-gradient(135deg, #000, #333); color: #fff; transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,.35); }
 
 /* ============ SECTIONS ============ */
 .section { padding: 90px 0; }
