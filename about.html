@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Rohi Kids™ | Plush Education, LLC</title>
+  <meta name="description" content="Learn about Plush Education, LLC and Rohi Kids™ — the K-5 educational brand where young learners go on big adventures around the world with Rohi, Dylan, Aya and Dr. Plush." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+<body>
+
+  <!-- ============ TOP BAR ============ -->
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p class="topbar__promo">
+        <span class="topbar__spark">✨</span> 100,000 Kids and Growing — Join the Journey!
+      </p>
+      <nav class="topbar__links" aria-label="Utility navigation">
+        <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener">YouTube</a>
+        <a href="about.html">About Us</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#faqs">FAQs</a>
+      </nav>
+    </div>
+  </div>
+
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="Rohi Kids home">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="40" height="40">
+            <rect x="4" y="6" width="40" height="36" rx="10" fill="url(#logoGrad2)"/>
+            <path d="M14 30c4-6 16-6 20 0" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round"/>
+            <circle cx="18" cy="20" r="3" fill="#fff"/>
+            <circle cx="30" cy="20" r="3" fill="#fff"/>
+            <defs>
+              <linearGradient id="logoGrad2" x1="0" y1="0" x2="48" y2="48">
+                <stop stop-color="#00D9FF"/><stop offset="1" stop-color="#007BFF"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        <span class="logo__text">Rohi<span class="logo__text--alt">Kids</span></span>
+      </a>
+
+      <button class="btn-categories">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4h7v7H4zM13 4h7v7h-7zM4 13h7v7H4zM13 13h7v7h-7z" fill="currentColor"/></svg>
+        Categories
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <form class="search" role="search" onsubmit="return false;">
+        <input type="search" class="search__input" placeholder="Search for books, games & more…" aria-label="Search" />
+        <button class="search__btn" aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="m20 20-3-3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </form>
+
+      <div class="header__actions">
+        <a href="index.html#game" class="btn-play">
+          <span class="btn-play__dot"></span> Play ABC Game
+        </a>
+        <button class="icon-btn" aria-label="Account">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="4" stroke="currentColor" stroke-width="2"/><path d="M4 20c0-4 4-6 8-6s8 2 8 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <button class="icon-btn" aria-label="Wishlist">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.5-9.5-9C1 9 2.5 5 6 5c2 0 3.2 1.2 4 2.5C10.8 6.2 12 5 14 5c3.5 0 5 4 3.5 7-2.5 4.5-9.5 9-9.5 9z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          <span class="badge">0</span>
+        </button>
+        <button class="icon-btn icon-btn--cart" aria-label="Cart">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="20" r="1.6" fill="currentColor"/><circle cx="18" cy="20" r="1.6" fill="currentColor"/><path d="M3 4h2l2.5 12h11l2-8H6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="badge">0</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobileNav">
+      <a href="index.html">Home</a>
+      <a href="index.html#videos">Our Videos</a>
+      <a href="index.html#books">Shop</a>
+      <a href="index.html#game">Play ABC Game</a>
+      <a href="about.html" class="active">About</a>
+      <a href="index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ============ ABOUT HERO ============ -->
+  <section class="about-hero">
+    <div class="about-hero__icons" aria-hidden="true">
+      <span class="ah-float ah-float--1">📚</span>
+      <span class="ah-float ah-float--2">✈️</span>
+      <span class="ah-float ah-float--3">🌍</span>
+      <span class="ah-float ah-float--4">⭐</span>
+      <span class="ah-float ah-float--5">🎨</span>
+      <span class="ah-float ah-float--6">🚀</span>
+    </div>
+    <div class="container about-hero__inner">
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span>About Us</span>
+      </nav>
+      <h1 class="about-hero__title">
+        We're on a Mission to Make <span class="about-hero__pop">Learning Epic</span>
+      </h1>
+      <p class="about-hero__lead">Plush Education, LLC — the creators of Rohi Kids™ — believe that every child deserves access to educational content that is fun, culturally rich, values-based and genuinely exciting.</p>
+      <div class="about-hero__badges">
+        <span>📖 K-5 Education</span>
+        <span>🌍 Global Culture</span>
+        <span>🏫 Plush Education, LLC</span>
+        <span>🤖 Powered by Rohi AI™</span>
+      </div>
+    </div>
+    <svg class="about-hero__wave" viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0 50c360 60 720 60 1080 20s360-60 360 0v30H0z" fill="#fff"/></svg>
+  </section>
+
+  <!-- ============ OUR STORY ============ -->
+  <section class="section story">
+    <div class="container story__inner">
+      <div class="story__visual reveal">
+        <div class="story__card-stack">
+          <div class="story__card story__card--back">
+            <span>📚</span>
+            <p>Science of Reading</p>
+          </div>
+          <div class="story__card story__card--mid">
+            <span>🌍</span>
+            <p>Global Adventures</p>
+          </div>
+          <div class="story__card story__card--front">
+            <span>✨</span>
+            <p>Rohi Kids™</p>
+            <small>An authentically Plush brand</small>
+          </div>
+        </div>
+      </div>
+      <div class="story__text">
+        <span class="section__eyebrow">📖 Our Story</span>
+        <h2 class="section__title">Born from a Love of Books &amp; Adventure</h2>
+        <p>Plush Education, LLC was founded with a single, powerful idea: <strong>what if children could fly around the world on a book?</strong> That question became the spark behind Rohi Kids™ — a brand where young learners embark on incredible journeys with Rohi, Dylan, Aya and Dr. Plush.</p>
+        <p>We write children's books about science experiments, cultural exploration and the kind of adventures that fire up a child's imagination. From the streets of Philadelphia to the ancient temples of Egypt, the cherry blossoms of Japan to the ruins of Greece — every book in our series opens a new window on the world.</p>
+        <p>At PLUSHTECH™ Headquarters, the team helps history come alive through hands-on learning, shared values and the silly STEAM brilliance of Dr. Plush. We believe that learning should never feel like a chore — it should feel like the greatest adventure of your life.</p>
+        <a href="index.html#books" class="btn btn--primary">Explore Our Books</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MISSION & VISION ============ -->
+  <section class="section section--alt mission">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">🎯 Mission &amp; Vision</span>
+        <h2 class="section__title">What Drives Us Every Day</h2>
+      </div>
+      <div class="mv-grid">
+        <div class="mv-card mv-card--mission reveal">
+          <div class="mv-card__icon">🎯</div>
+          <h3>Our Mission</h3>
+          <p>To spark curiosity and wonder in young learners through global discovery, cultural exploration and values-based storytelling — making K-5 education entertaining, meaningful and accessible to every child, everywhere.</p>
+        </div>
+        <div class="mv-card mv-card--vision reveal" style="--d:.12s">
+          <div class="mv-card__icon">🔭</div>
+          <h3>Our Vision</h3>
+          <p>A world where every child between Kindergarten and Grade 5 has access to a book that makes them feel seen, curious and inspired — and where learning to read and write feels like the greatest adventure of their life.</p>
+        </div>
+        <div class="mv-card mv-card--promise reveal" style="--d:.24s">
+          <div class="mv-card__icon">🤝</div>
+          <h3>Our Promise</h3>
+          <p>Every Rohi Kids™ book carries the <strong>Plush Promise™</strong> — a guarantee of quality, authenticity and curriculum alignment. We don't publish anything we wouldn't put in our own children's hands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MEET THE CHARACTERS ============ -->
+  <section class="section characters">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">🎭 The Characters</span>
+        <h2 class="section__title">Meet the Rohi Kids™ Crew</h2>
+        <p class="section__lead">Four unforgettable characters. One epic Book of Journeys™. Countless adventures around the world.</p>
+      </div>
+      <div class="char-grid">
+
+        <article class="char-card reveal">
+          <div class="char-card__avatar char-card__avatar--rohi">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+              <circle cx="60" cy="60" r="55" fill="#FF6B35"/>
+              <circle cx="60" cy="48" r="22" fill="#FFDBC1"/>
+              <rect x="36" y="65" width="48" height="30" rx="14" fill="#007BFF"/>
+              <circle cx="52" cy="44" r="4" fill="#1a1a2e"/>
+              <circle cx="68" cy="44" r="4" fill="#1a1a2e"/>
+              <path d="M52 56c3 3 13 3 16 0" stroke="#c0775a" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M38 38c4-10 40-10 44 0" stroke="#FF6B35" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <div class="char-card__color char-card__color--rohi"></div>
+          <h3>Rohi</h3>
+          <span class="char-card__role">The Explorer</span>
+          <p>Rohi is the heart of every journey — curious, brave and always ready to learn. Powered by Rohi AI™, Rohi leads the crew around the world on the legendary Book of Journeys™.</p>
+          <div class="char-card__traits">
+            <span>Curious</span><span>Brave</span><span>Kind</span>
+          </div>
+        </article>
+
+        <article class="char-card reveal" style="--d:.1s">
+          <div class="char-card__avatar char-card__avatar--dylan">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+              <circle cx="60" cy="60" r="55" fill="#1DD1A1"/>
+              <circle cx="60" cy="48" r="22" fill="#FFDBC1"/>
+              <rect x="36" y="65" width="48" height="30" rx="14" fill="#FF6B35"/>
+              <circle cx="52" cy="44" r="4" fill="#1a1a2e"/>
+              <circle cx="68" cy="44" r="4" fill="#1a1a2e"/>
+              <path d="M52 56c3 3 13 3 16 0" stroke="#c0775a" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M40 30c2-6 38-6 40 0c0 4-8 6-10 4s-4-4-10-4-8 2-10 4-10-2-10-4z" fill="#4a2c0a"/>
+            </svg>
+          </div>
+          <div class="char-card__color char-card__color--dylan"></div>
+          <h3>Dylan</h3>
+          <span class="char-card__role">The Thinker</span>
+          <p>Dylan is the crew's problem-solver — always ready with a plan and a fact. He loves STEAM challenges and asks the questions that make everyone think a little deeper.</p>
+          <div class="char-card__traits">
+            <span>Logical</span><span>Creative</span><span>Reliable</span>
+          </div>
+        </article>
+
+        <article class="char-card reveal" style="--d:.2s">
+          <div class="char-card__avatar char-card__avatar--aya">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+              <circle cx="60" cy="60" r="55" fill="#FF6B9D"/>
+              <circle cx="60" cy="48" r="22" fill="#FFDBC1"/>
+              <rect x="36" y="65" width="48" height="30" rx="14" fill="#A55EEA"/>
+              <circle cx="52" cy="44" r="4" fill="#1a1a2e"/>
+              <circle cx="68" cy="44" r="4" fill="#1a1a2e"/>
+              <path d="M52 56c3 3 13 3 16 0" stroke="#c0775a" stroke-width="2" fill="none" stroke-linecap="round"/>
+              <path d="M38 36c4-12 40-12 44 0" stroke="#FF6B9D" stroke-width="4" fill="none" stroke-linecap="round"/>
+              <circle cx="44" cy="38" r="5" fill="#FF6B9D"/>
+              <circle cx="76" cy="38" r="5" fill="#FF6B9D"/>
+            </svg>
+          </div>
+          <div class="char-card__color char-card__color--aya"></div>
+          <h3>Aya</h3>
+          <span class="char-card__role">The Artist</span>
+          <p>Aya brings colour and creativity to every adventure. She's passionate about art, culture and self-expression — and always finds the beauty and wonder in every new place the crew visits.</p>
+          <div class="char-card__traits">
+            <span>Creative</span><span>Empathetic</span><span>Joyful</span>
+          </div>
+        </article>
+
+        <article class="char-card reveal" style="--d:.3s">
+          <div class="char-card__avatar char-card__avatar--drplush">
+            <svg viewBox="0 0 120 120" width="90" height="90">
+              <circle cx="60" cy="60" r="55" fill="#FFD700"/>
+              <rect x="34" y="30" width="52" height="46" rx="12" fill="#00D9FF"/>
+              <circle cx="48" cy="52" r="7" fill="#fff"/>
+              <circle cx="72" cy="52" r="7" fill="#fff"/>
+              <circle cx="48" cy="52" r="3.5" fill="#1a1a2e"/>
+              <circle cx="72" cy="52" r="3.5" fill="#1a1a2e"/>
+              <rect x="50" y="64" width="20" height="5" rx="2.5" fill="#fff"/>
+              <line x1="60" y1="18" x2="60" y2="30" stroke="#007BFF" stroke-width="3"/>
+              <circle cx="60" cy="14" r="6" fill="#FF6B35"/>
+              <rect x="22" y="76" width="76" height="24" rx="8" fill="#007BFF"/>
+              <text x="60" y="93" text-anchor="middle" font-family="Poppins,sans-serif" font-size="10" font-weight="700" fill="#fff">Dr. Plush</text>
+            </svg>
+          </div>
+          <div class="char-card__color char-card__color--drplush"></div>
+          <h3>Dr. Plush</h3>
+          <span class="char-card__role">The Scientist</span>
+          <p>Dr. Plush is PLUSHTECH™ HQ's resident genius — a silly, loveable robot scientist who turns every lesson into a STEAM experiment. What new idea will he come up with next?</p>
+          <div class="char-card__traits">
+            <span>Inventive</span><span>Silly</span><span>Inspiring</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PLUSHTECH HQ ============ -->
+  <section class="section section--alt plushtech">
+    <div class="container plushtech__inner">
+      <div class="plushtech__text reveal">
+        <span class="section__eyebrow">🤖 PLUSHTECH™ HQ</span>
+        <h2 class="section__title">Where Learning Gets a Turbo Boost</h2>
+        <p>At PLUSHTECH™ Headquarters, Dr. Plush and the team use the very latest in Rohi AI™ technology to make history, science and world culture come alive. It's where big ideas get tested, where silly experiments turn into life lessons, and where every child becomes a scientist, an explorer and a storyteller.</p>
+        <p>The Book of Journeys™ — PLUSHTECH™'s most powerful invention — gives Rohi and the crew the ability to fly anywhere in the world, anytime. Ancient Egypt? Jump in. Cherry-blossom Japan? Let's go. The Parthenon in Greece? Already there.</p>
+        <ul class="plushtech__list">
+          <li><span>🤖</span> Rohi AI™ — your motivational learning guide</li>
+          <li><span>📖</span> Book of Journeys™ — the gateway to every adventure</li>
+          <li><span>🔬</span> STEAM Lab — Dr. Plush's experiment centre</li>
+          <li><span>🌐</span> Global Discovery Engine — exploring world cultures</li>
+        </ul>
+      </div>
+      <div class="plushtech__visual reveal" style="--d:.15s">
+        <div class="plushtech__hq">
+          <div class="hq-building">
+            <div class="hq-roof">PLUSHTECH™<br><small>HQ</small></div>
+            <div class="hq-windows">
+              <div class="hq-win hq-win--lit"></div>
+              <div class="hq-win hq-win--lit"></div>
+              <div class="hq-win"></div>
+              <div class="hq-win hq-win--lit"></div>
+              <div class="hq-win"></div>
+              <div class="hq-win hq-win--lit"></div>
+            </div>
+            <div class="hq-door"></div>
+          </div>
+          <div class="hq-floats">
+            <span class="hq-float">🔬</span>
+            <span class="hq-float" style="animation-delay:.8s">💡</span>
+            <span class="hq-float" style="animation-delay:1.4s">🚀</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHAT WE CREATE ============ -->
+  <section class="section create">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">🎁 What We Create</span>
+        <h2 class="section__title">More Than Just Books</h2>
+        <p class="section__lead">Rohi Kids™ is a complete K-5 educational ecosystem — books, videos, games and tools that work together to make learning irresistible.</p>
+      </div>
+      <div class="create-grid">
+        <div class="create-card reveal">
+          <div class="create-card__icon">📚</div>
+          <h3>Activity Books</h3>
+          <p>Science-of-Reading aligned workbooks covering phonics, cursive, CVC words, sight words and comprehension — available at Walmart, Amazon and Barnes &amp; Noble.</p>
+          <a href="index.html#books" class="create-card__link">Browse Books →</a>
+        </div>
+        <div class="create-card reveal" style="--d:.1s">
+          <div class="create-card__icon">🌍</div>
+          <h3>Adventure Books</h3>
+          <p>The Amazing Journey series — chapter books where Rohi and crew travel to Philadelphia, Greece, India, Japan, Egypt and beyond. Each book teaches world culture and shared values.</p>
+          <a href="index.html#books" class="create-card__link">Shop Journeys →</a>
+        </div>
+        <div class="create-card reveal" style="--d:.2s">
+          <div class="create-card__icon">▶️</div>
+          <h3>YouTube Videos</h3>
+          <p>Educational sing-alongs, ABCs, 123s, world culture episodes, creative art tutorials, STEAM experiments and motivational stories — all free on the Rohi Kids™ YouTube channel.</p>
+          <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener" class="create-card__link">Watch Now →</a>
+        </div>
+        <div class="create-card reveal" style="--d:.3s">
+          <div class="create-card__icon">🎮</div>
+          <h3>Educational Games</h3>
+          <p>Rohi's Journey and Dr. Plush's Neuro-Word Wonderwall — interactive games powered by PLUSHTECH™ that reinforce reading, spelling and critical thinking through play.</p>
+          <a href="index.html#game" class="create-card__link">Play Games →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VALUES ============ -->
+  <section class="section section--alt values">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">💖 Our Core Values</span>
+        <h2 class="section__title">The Heart Behind Every Book</h2>
+        <p class="section__lead">These values aren't just printed in our books — they guide everything we create, every decision we make and every adventure we design.</p>
+      </div>
+      <div class="values-grid">
+        <div class="value-item reveal">
+          <div class="value-item__icon" style="--vc:#FF6B9D">💖</div>
+          <h4>Empathy &amp; Kindness</h4>
+          <p>Every story models what it looks like to care for others, listen well and lead with a generous heart.</p>
+        </div>
+        <div class="value-item reveal" style="--d:.08s">
+          <div class="value-item__icon" style="--vc:#00D9FF">🌍</div>
+          <h4>Cultural Respect</h4>
+          <p>We celebrate differences. Every journey teaches children to appreciate traditions and perspectives beyond their own.</p>
+        </div>
+        <div class="value-item reveal" style="--d:.16s">
+          <div class="value-item__icon" style="--vc:#FFD700">💡</div>
+          <h4>Curiosity &amp; Wonder</h4>
+          <p>We design every page to leave a child asking "What's next?" — because curiosity is the engine of all learning.</p>
+        </div>
+        <div class="value-item reveal" style="--d:.24s">
+          <div class="value-item__icon" style="--vc:#1DD1A1">🌱</div>
+          <h4>Growth Mindset</h4>
+          <p>Rohi and the crew face challenges, make mistakes and keep going. We model resilience and the joy of trying again.</p>
+        </div>
+        <div class="value-item reveal" style="--d:.32s">
+          <div class="value-item__icon" style="--vc:#A55EEA">🤝</div>
+          <h4>Fairness &amp; Freedom</h4>
+          <p>Inspired by America's founding values — liberty, justice and shared responsibility. Core themes of the Amazing Journey series.</p>
+        </div>
+        <div class="value-item reveal" style="--d:.4s">
+          <div class="value-item__icon" style="--vc:#FF6B35">🔬</div>
+          <h4>STEAM Innovation</h4>
+          <p>Dr. Plush proves that science, technology, engineering, art and maths are the most exciting playgrounds on Earth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BY THE NUMBERS ============ -->
+  <section class="section numbers">
+    <div class="container">
+      <div class="section__head reveal">
+        <span class="section__eyebrow">📊 By the Numbers</span>
+        <h2 class="section__title">Our Impact So Far</h2>
+      </div>
+      <div class="numbers-grid">
+        <div class="number-card reveal">
+          <div class="number-card__num" data-target="100000">0</div>
+          <p>Kids Reached</p>
+        </div>
+        <div class="number-card reveal" style="--d:.1s">
+          <div class="number-card__num" data-target="15">0</div>
+          <p>Book Titles</p>
+        </div>
+        <div class="number-card reveal" style="--d:.2s">
+          <div class="number-card__num" data-target="3">0</div>
+          <p>Major Retailers</p>
+        </div>
+        <div class="number-card reveal" style="--d:.3s">
+          <div class="number-card__num" data-target="5">0</div>
+          <p>Countries in the Journey Series</p>
+        </div>
+        <div class="number-card reveal" style="--d:.4s">
+          <div class="number-card__num" data-target="4">0</div>
+          <p>Iconic Characters</p>
+        </div>
+        <div class="number-card reveal" style="--d:.5s">
+          <div class="number-card__num" data-target="48">0</div>
+          <p>Rating on Amazon (x10)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="about-cta">
+    <div class="about-cta__icons" aria-hidden="true">
+      <span class="ah-float ah-float--1">📚</span>
+      <span class="ah-float ah-float--3">🌍</span>
+      <span class="ah-float ah-float--6">🚀</span>
+    </div>
+    <div class="container about-cta__inner reveal">
+      <h2>Ready to Join the Journey?</h2>
+      <p>Explore our books, watch our videos, and let Rohi, Dylan, Aya and Dr. Plush take your child on the adventure of a lifetime.</p>
+      <div class="about-cta__btns">
+        <a href="index.html#books" class="btn btn--primary">Shop All Books</a>
+        <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener" class="btn btn--ghost">Watch on YouTube</a>
+        <a href="index.html#contact" class="btn btn--ghost">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="about">
+    <div class="container footer__grid">
+      <div class="footer__col">
+        <a href="index.html" class="logo logo--light">
+          <span class="logo__text">Rohi<span class="logo__text--alt">Kids</span></span>
+        </a>
+        <p class="footer__about">An authentically Plush™ brand. Powered by Rohi AI™ and PLUSHTECH™ HQ — entertaining, educational content for young learners everywhere.</p>
+        <div class="footer__social">
+          <a href="https://www.youtube.com/@rohi-kids" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__col">
+        <h4>Explore</h4>
+        <a href="index.html">Home</a>
+        <a href="index.html#books">Shop</a>
+        <a href="index.html#videos">Our Videos</a>
+        <a href="index.html#game">Games</a>
+      </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <a href="about.html">About Us</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="index.html#faqs">FAQs</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer__col">
+        <h4>Call Support</h4>
+        <p class="footer__phone">+1 344 680 931</p>
+        <p class="footer__about">Plush Education, LLC</p>
+      </div>
+    </div>
+    <div class="footer__bar">
+      <div class="container footer__bar-inner">
+        <p>© 2026 Rohi Kids™. All Rights Reserved.</p>
+        <p><a href="#">Terms &amp; Conditions</a> · <a href="#">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/about.js"></script>
+</body>
+</html>
